@@ -11,21 +11,20 @@
     color: #111;
   }
   
+  /* CONTAINER */
+  .container {
+    width: 1140px;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  
   /* HEADER SECTION */
   .hero-header {
     width: 100%;
     background: #f3f6ff url('../Assets/Hero-bg.png') repeat;
     padding: 60px 0;
-  
   }
   
-  /* CONTAINER (1140px wide centered with 150px sides) */
-  .container {
-    width: 1140px;
-    margin: 0 auto;
-  }
-  
-  /* NAVBAR */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -38,8 +37,10 @@
     font-size: 20px;
     font-weight: bold;
     color: #4a3aff;
+    cursor: pointer;
   }
-  .logo:hover{
+  
+  .logo:hover {
     background-color: rgb(48, 227, 158);
   }
   
@@ -75,77 +76,63 @@
     border-radius: 6px;
     text-decoration: none;
     font-size: 16px;
-  }
-  .card-container {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f7ff;
-    padding: 2rem;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    transition: background 0.3s ease;
   }
   
-  .testimonials-container {
-    width: 1140px;
-    padding: 2rem;
-    background-color: #f0f4ff;
-    border-radius: 12px;
+  .btn-cta:hover {
+    background-color: #333;
   }
-  .testimonials-container h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: #333;
-  }
-  .cards {
+  
+  /* PREVIEW SECTION */
+  .preview {
+    padding: 80px 20px;
     display: flex;
-    justify-content: space-around;
-    gap: 1rem;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
-  .card {
-    background: white;
-    flex: 1 1 30%;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  .stars {
-    color: #fbbf24;
+  
+  .preview-text {
+    max-width: 500px;
   }
   
-  .card h3 {
-    margin: 0;
-    font-size: 1.1rem;
-    color: #111827;
+  .preview-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
   }
-  .quote {
-    font-size: 0.95rem;
+  
+  .preview-text p {
+    margin-bottom: 20px;
     color: #555;
-    line-height: 1.4;
-  }
-  .reviewer {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin-top: auto;
-    font-size: 0.9rem;
-    color: #666;
-  }
-  .reviewer img {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
   }
   
+  .btn.secondary {
+    background-color: #4a3aff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
   
+  .btn.secondary:hover {
+    background-color: #333;
+  }
+  
+  .preview-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* STATS SECTION */
   .stats-container {
     background-color: #eaeaff;
-    width: 1140px;
+    max-width: 1140px;
+    margin: 60px auto;
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
@@ -153,7 +140,7 @@
   }
   
   .stats-container h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
     color: #333;
   }
@@ -162,10 +149,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   
   .stat {
     color: #4a4aff;
+    text-align: center;
   }
   
   .stat-value {
@@ -178,56 +168,187 @@
     color: #666;
   }
   
+  /* TESTIMONIALS SECTION */
+  .card-container {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7ff;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testimonials-container {
+    width: 1140px;
+    max-width: 95%;
+    padding: 2rem;
+    background-color: #f0f4ff;
+    border-radius: 12px;
+  }
+  
+  .testimonials-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    flex: 1 1 300px;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .stars {
+    color: #fbbf24;
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #111827;
+  }
+  
+  .quote {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .reviewer {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .reviewer img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* FOCUS SECTION */
   .focus {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
     background: #eef3ff;
+  }
+  
+  .focus h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .focus p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #555;
   }
   
   .focus img {
     max-width: 600px;
     margin-top: 20px;
     border-radius: 10px;
+    width: 100%;
+    height: auto;
   }
   
+  .btn {
+    background-color: #4a3aff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+  }
+  
+  /* CONTACT SECTION */
   .contact {
-    padding: 60px 20px;
-    text-align: center;
+    background-color: #f9f9f9;
+    padding: 80px 20px;
   }
   
-  .contact form {
-    max-width: 500px;
+  .contact-container {
+    display: flex;
+    max-width: 1140px;
     margin: 0 auto;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .contact-left {
+    flex: 1 1 400px;
+    padding: 20px;
+  }
+  
+  .contact-title {
+    font-size: 97px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    flex: 1 1 400px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    align-items: flex-start;
   }
-  .contact input, .contact textarea {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 6px;
+  
+  .contact-form label {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px 14px;
+    font-size: 1rem;
     border: 1px solid #ccc;
-  }
-  section{
-    padding: 130px 230px;
-    display: flex;
-    gap: 100px;
-  }
-  .section-column{
-    width: 50%;
-  }
-  
-  section input[type="text"],  section input[type="email"], section textarea{
-    height: 64px;
-    border-radius: 5px;
-    background-color: white;
-    display: block;
+    border-radius: 6px;
     width: 100%;
-    padding: 10px 20px;
-    margin-bottom: 24px;
-    border: none;
+    font-family: inherit;
   }
   
+  .contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .contact .btn {
+    align-self: flex-start;
+  }
+  
+  /* FOOTER SECTION */
   footer {
     padding: 40px 20px;
     text-align: center;
@@ -238,74 +359,32 @@
   footer nav a {
     margin: 0 10px;
     color: #333;
-  }
-
-  .testimonials-container {
-    display: flex;
-    gap: 20px; /* space between cards */
-    flex-wrap: wrap; /* allow wrapping on smaller screens */
-    justify-content: center; /* optional: center them */
+    text-decoration: none;
   }
   
-  .card {
-    flex: 0 0 300px; /* fixed width of each card */
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
+  footer nav a:hover {
+    text-decoration: underline;
   }
   
-  .testimonials-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .preview,
+    .contact-container {
+      flex-direction: column;
+      gap: 40px;
+    }
   
-  .cards-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+    .contact-title {
+      font-size: 64px;
+    }
   
-  .card {
-    flex: 0 0 300px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    text-align: center;
-  }
+    .stats {
+      flex-direction: column;
+      gap: 20px;
+    }
   
-  .stars {
-    color: gold;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .quote {
-    font-style: italic;
-    margin: 1rem 0;
-  }
-  
-  .reviewer {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 1rem;
-  }
-  
-  .reviewer img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .review-date {
-    font-size: 0.8rem;
-    color: #aaa;
+    .hero-text h1 {
+      font-size: 32px;
+    }
   }
   
