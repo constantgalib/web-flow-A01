@@ -1,0 +1,241 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f5f9ff;
+    color: #111;
+  }
+  
+  /* HEADER SECTION */
+  .hero-header {
+    width: 100%;
+    background: #f3f6ff url('../Assets/Hero-bg.png') repeat;
+    padding: 60px 0;
+  
+  }
+  
+  /* CONTAINER (1140px wide centered with 150px sides) */
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 51px;
+    margin-bottom: 60px;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4a3aff;
+  }
+  .logo:hover{
+    background-color: rgb(48, 227, 158);
+  }
+  
+  .btn-signup {
+    background-color: #4a3aff;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  /* HERO TEXT SECTION */
+  .hero-text {
+    text-align: center;
+    height: 547px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+  
+  .btn-cta {
+    background-color: #4a3aff;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .card-container {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7ff;
+    padding: 2rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testimonials-container {
+    width: 1140px;
+    padding: 2rem;
+    background-color: #f0f4ff;
+    border-radius: 12px;
+  }
+  .testimonials-container h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .card {
+    background: white;
+    flex: 1 1 30%;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .stars {
+    color: #fbbf24;
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #111827;
+  }
+  .quote {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  .reviewer {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .reviewer img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  
+  .stats-container {
+    background-color: #eaeaff;
+    width: 1140px;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .stats-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .stat {
+    color: #4a4aff;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .focus {
+    padding: 60px 20px;
+    text-align: center;
+    background: #eef3ff;
+  }
+  
+  .focus img {
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact input, .contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  section{
+    padding: 130px 230px;
+    display: flex;
+    gap: 100px;
+  }
+  .section-column{
+    width: 50%;
+  }
+  
+  section input[type="text"],  section input[type="email"], section textarea{
+    height: 64px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    border: none;
+  }
+  
+  footer {
+    padding: 40px 20px;
+    text-align: center;
+    background: #fff;
+    color: #666;
+  }
+  
+  footer nav a {
+    margin: 0 10px;
+    color: #333;
+  }
