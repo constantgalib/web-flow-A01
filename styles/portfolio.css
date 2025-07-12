@@ -11,19 +11,26 @@
     color: #111;
   }
   
-  /* CONTAINER */
-  .container {
-    width: 1140px;
-    max-width: 95%;
-    margin: 0 auto;
+  .hero-header {
+    width: 1440px;
+    height: 698px;
+    background: #f3f6ff url('../Assets/Hero-bg.png') no-repeat center center;
+    background-size: cover;
+    margin: 0 auto; /* center horizontally */
+    padding: 60px 0; /* optional vertical padding */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
-  /* HEADER SECTION */
-  .hero-header {
-    width: 100%;
-    background: #f3f6ff url('../Assets/Hero-bg.png') repeat;
-    padding: 60px 0;
+  .container {
+    width: 100%; /* fill hero-header width */
+    margin: 0 auto;
+    padding: 0 30px; /* optional side padding */
+    box-sizing: border-box;
   }
+  
   
   .navbar {
     display: flex;
@@ -129,15 +136,21 @@
   }
   
   /* STATS SECTION */
+
   .stats-container {
+    width: 1140px;
+    height: 306px;
     background-color: #eaeaff;
-    max-width: 1140px;
     margin: 60px auto;
-    padding: 2rem;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+  
   
   .stats-container h2 {
     font-size: 1.8rem;
@@ -361,6 +374,13 @@
     color: #333;
     text-decoration: none;
   }
+
+  .footer-logo {
+    font-size: 100px;
+    font-weight: bold;
+    color: #4a3aff;
+  }
+  
   
   footer nav a:hover {
     text-decoration: underline;
