@@ -239,3 +239,73 @@
     margin: 0 10px;
     color: #333;
   }
+
+  .testimonials-container {
+    display: flex;
+    gap: 20px; /* space between cards */
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+    justify-content: center; /* optional: center them */
+  }
+  
+  .card {
+    flex: 0 0 300px; /* fixed width of each card */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .testimonials-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    flex: 0 0 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .stars {
+    color: gold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .quote {
+    font-style: italic;
+    margin: 1rem 0;
+  }
+  
+  .reviewer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  
+  .reviewer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .review-date {
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+  
